@@ -1,2 +1,7 @@
-raveform/
 .DS_Store
+data/raveform/
+data/audio/
+data/download.log
+.venv/
+venv/
+__pycache__/

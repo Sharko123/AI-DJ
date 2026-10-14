@@ -8,7 +8,7 @@ For each pair of adjacent tracklist entries (A, B) that both have an alignment:
     track beat to seconds with A's beat file.
   - Transition length is A's mixout_beat_mix minus B's mixin_beat_mix (beats).
 
-Usage: python3 extract_transitions.py [--data raveform] [--out transitions.csv]
+Usage: python3 extract_transitions.py [--data data/raveform] [--out transitions.csv]
                                       [--min-match-rate 0.3] [--max-beatfile-err 0.05]
 """
 import argparse
@@ -67,7 +67,7 @@ def track_beat_at(wp, mix_beat):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
-    ap.add_argument("--data", type=Path, default=Path(__file__).parent / "raveform")
+    ap.add_argument("--data", type=Path, default=Path(__file__).parent / "data" / "raveform")
     ap.add_argument("--out", type=Path, default=Path(__file__).parent / "transitions.csv")
     ap.add_argument("--min-match-rate", type=float, default=0.3)
     ap.add_argument("--max-beatfile-err", type=float, default=0.05,

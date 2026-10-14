@@ -1,0 +1,11 @@
+# Analysis (test_beat_file.py)
+numpy
+pandas
+mir_eval
+
+# Audio download (download_audio.sh)
+yt-dlp
+
+# Not pip-installable, also needed by download_audio.sh:
+#   ffmpeg  - audio extraction
+#   deno    - JavaScript runtime for yt-dlp's YouTube support
