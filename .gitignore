@@ -1,7 +1,5 @@
 .DS_Store
-data/raveform/
-data/audio/
-data/download.log
+data/
 .venv/
 venv/
 __pycache__/
